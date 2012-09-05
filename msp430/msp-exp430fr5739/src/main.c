@@ -44,10 +44,3 @@ ANTARES_APP(blinker_app)
 
 }
 
-#pragma vector=PORT1_VECTOR
-__interrupt void Port_1(void)
-{
-        while (!(P1IN & (1<<3)));; /* debounce */
-	P1IFG &= ~(1<<3); /* Clear the isr flag */
-	P1OUT^=1<<6;
-}
