@@ -1,0 +1,16 @@
+choice 
+prompt "LED running style"
+
+config LED_LEFT
+bool "Left to right"
+
+config LED_RIGHT
+bool "Right to left"
+
+config LED_KITT
+bool "KITT style"
+
+endchoice
+
+config LED_DELAY
+int "LED blink delay"
