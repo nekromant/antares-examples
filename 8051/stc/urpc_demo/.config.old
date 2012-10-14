@@ -1,0 +1,111 @@
+#
+# Automatically generated make config: don't edit
+# Antares version: 0.2-rc1, Insane Mushroom
+# Sun Oct 14 19:05:48 2012
+#
+
+#
+# Target platform settings
+#
+CONFIG_ARCH_8051=y
+# CONFIG_ARCH_ARM is not set
+# CONFIG_ARCH_AVR is not set
+# CONFIG_ARCH_GBZ80 is not set
+# CONFIG_ARCH_MSP430 is not set
+CONFIG_ANTARES_STARTUP=y
+CONFIG_ARCH_8051_STC=y
+# CONFIG_ARCH_8051_AT89 is not set
+CONFIG_F_CPU=12000000
+# CONFIG_MODEL_SMALL is not set
+CONFIG_MODEL_MEDIUM=y
+# CONFIG_MODEL_LARGE is not set
+# CONFIG_MODEL_HUGE is not set
+CONFIG_XRAM_SIZE=128
+CONFIG_IRAM_SIZE=128
+
+#
+# Toolchain settings
+#
+# CONFIG_SHOW_ALL_TOOLCHAINS is not set
+CONFIG_TOOLCHAIN_SDCC=y
+CONFIG_SDCC_CFLAGS=""
+CONFIG_SDCC_ASFLAGS=""
+CONFIG_SDCC_LDFLAGS=""
+
+#
+# Libraries and drivers
+#
+CONFIG_SHOW_BROKEN=y
+# CONFIG_LIB_SNPRINTF is not set
+# CONFIG_LIB_NLDUMMY is not set
+# CONFIG_LIB_TMGR is not set
+# CONFIG_LIB_XMODEM is not set
+# CONFIG_LIB_PRINTK is not set
+CONFIG_LIB_URPC=y
+
+#
+# Library tuning
+#
+CONFIG_URPC_SZB=1
+CONFIG_URPC_IDB=1
+CONFIG_URPC_TINY=y
+CONFIG_URPC_T_SERIAL=y
+# CONFIG_URPC_ISR_CONTEXT is not set
+CONFIG_8051_DELAYLIB=y
+CONFIG_8051_DELAYMHZ=20
+CONFIG_LIB_STC_IAP=y
+# CONFIG_CONTRIB is not set
+
+#
+# Project Settings
+#
+# CONFIG_HELLO_WORLD is not set
+
+#
+# Deployment settings
+#
+CONFIG_DEPLOY_ROOT=y
+
+#
+# Pick the deployment methods you need below
+#
+CONFIG_DEPLOY_STCDUDE=y
+CONFIG_DEPLOY_STCDUDE_BAUDLOW=19200
+CONFIG_DEPLOY_STCDUDE_BAUDHIGH=19200
+CONFIG_DEPLOY_STCDUDE_PORT="/dev/ttyUSB0"
+CONFIG_DEPLOY_STCDUDE_COMMANDLINE=""
+
+#
+# Custom deployment methods
+#
+
+#
+# Build System Tweaks
+#
+CONFIG_MAKE_DEFTARGET="deploy"
+CONFIG_DEPLOY_DEFTARGET="stcdude"
+CONFIG_IMAGE_FILENAME="antares"
+CONFIG_IMAGE_DIR="images"
+# CONFIG_NEED_GENERATE is not set
+# CONFIG_BUILD_VERBOSE is not set
+
+#
+# Version Information
+#
+
+#
+# +++ For reference only +++
+#
+
+#
+# All values below are to be filled by Make scripts
+#
+
+#
+# Use make set_version to change
+#
+CONFIG_VERSION_MAJOR="0"
+CONFIG_VERSION_MINOR="2-rc1"
+CONFIG_VERSION_CODENAME="Insane Mushroom"
+CONFIG_VERSION_STRING="0.2-rc1, Insane Mushroom"
+CONFIG_VERSION_GIT="e075258599631c3add502068f04b72e5e7c10a41"
