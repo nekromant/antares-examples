@@ -1,0 +1,111 @@
+#
+# Automatically generated make config: don't edit
+# Antares version: 0.2-rc1, Insane Mushroom
+# Tue Oct 30 22:57:51 2012
+#
+
+#
+# Target platform settings
+#
+# CONFIG_ARCH_8051 is not set
+# CONFIG_ARCH_ARM is not set
+# CONFIG_ARCH_AVR is not set
+# CONFIG_ARCH_GBZ80 is not set
+CONFIG_ARCH_MIPS=y
+# CONFIG_ARCH_MSP430 is not set
+# CONFIG_ANTARES_STARTUP is not set
+CONFIG_MCU_1890=y
+
+#
+# Any opts?
+#
+
+#
+# Toolchain settings
+#
+# CONFIG_SHOW_ALL_TOOLCHAINS is not set
+CONFIG_TOOLCHAIN_GCC=y
+CONFIG_TOOLCHAIN_PREFIX="mips-1890-elf-"
+# CONFIG_CC_OPT0 is not set
+# CONFIG_CC_OPT1 is not set
+# CONFIG_CC_OPT2 is not set
+# CONFIG_CC_OPT3 is not set
+CONFIG_CC_OPTSZ=y
+CONFIG_GCC_NOSTDLIBS=y
+# CONFIG_GCC_LC is not set
+# CONFIG_GCC_LM is not set
+# CONFIG_GCC_STRIP is not set
+# CONFIG_GCC_PARANOID_WRN is not set
+
+#
+# Fine tuning
+#
+CONFIG_CFLAGS=""
+CONFIG_ASFLAGS=""
+CONFIG_LDFLAGS=""
+
+#
+# Libraries and drivers
+#
+# CONFIG_SHOW_BROKEN is not set
+# CONFIG_LIB_SNPRINTF is not set
+# CONFIG_LIB_NLDUMMY is not set
+# CONFIG_LIB_TMGR is not set
+# CONFIG_LIB_XMODEM is not set
+# CONFIG_LIB_PRINTK is not set
+# CONFIG_LIB_URPC is not set
+# CONFIG_CONTRIB is not set
+
+#
+# Project Settings
+#
+# CONFIG_HELLO_WORLD is not set
+
+#
+# Deployment settings
+#
+CONFIG_DEPLOY_ROOT=y
+
+#
+# Pick the deployment methods you need below
+#
+CONFIG_DEPLOY_ZMODEM=y
+CONFIG_DEPLOY_ZMODEM_PORT="/dev/ttyACM0"
+CONFIG_DEPLOY_ZMODEM_SPEED=9600
+CONFIG_DEPLOY_ZMODEM_PRESTR="lz 0x80100000 a"
+CONFIG_DEPLOY_ZMODEM_POSTSTR="g 0x80100000"
+
+#
+# Custom deployment methods
+#
+
+#
+# Build System Tweaks
+#
+CONFIG_MAKE_DEFTARGET="deploy-zmodem"
+CONFIG_DEPLOY_DEFTARGET="help"
+CONFIG_IMAGE_FILENAME="antares"
+CONFIG_IMAGE_DIR="images"
+CONFIG_NEED_GENERATE=y
+# CONFIG_BUILD_VERBOSE is not set
+
+#
+# Version Information
+#
+
+#
+# +++ For reference only +++
+#
+
+#
+# All values below are to be filled by Make scripts
+#
+
+#
+# Use make set_version to change
+#
+CONFIG_VERSION_MAJOR="0"
+CONFIG_VERSION_MINOR="2-rc1"
+CONFIG_VERSION_CODENAME="Insane Mushroom"
+CONFIG_VERSION_STRING="0.2-rc1, Insane Mushroom"
+CONFIG_VERSION_GIT="0f4ec85cee33e4ad06acf9f6266bbffbd1b32844"
