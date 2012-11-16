@@ -1,0 +1,178 @@
+#
+# Automatically generated make config: don't edit
+# Antares version: 0.2-rc1, Insane Mushroom
+# Fri Nov 16 10:37:00 2012
+#
+
+#
+# Target platform settings
+#
+# CONFIG_ARCH_8051 is not set
+CONFIG_ARCH_ARM=y
+# CONFIG_ARCH_AVR is not set
+# CONFIG_ARCH_GBZ80 is not set
+# CONFIG_ARCH_MIPS is not set
+# CONFIG_ARCH_MSP430 is not set
+CONFIG_ANTARES_STARTUP=y
+CONFIG_MCU_STM32=y
+# CONFIG_STM32F10X_LD is not set
+# CONFIG_STM32F10X_LD_VL is not set
+# CONFIG_STM32F10X_MD is not set
+# CONFIG_STM32F10X_MD_VL is not set
+CONFIG_STM32F10X_HD=y
+# CONFIG_STM32F10X_HD_VL is not set
+# CONFIG_STM32F10X_XL is not set
+# CONFIG_STM32F10X_CL is not set
+CONFIG_STM32_HSE_VALUE=8000000
+CONFIG_STM32_FREQ_72=y
+# CONFIG_STM32_FREQ_56 is not set
+# CONFIG_STM32_FREQ_48 is not set
+# CONFIG_STM32_FREQ_36 is not set
+# CONFIG_STM32_FREQ_24 is not set
+# CONFIG_STM32_FREQ_HSE is not set
+
+#
+# Code placement settings
+#
+# CONFIG_STM32_RUN_IN_RAM is not set
+CONFIG_STM32_OVERRIDE_BASES=y
+CONFIG_STM32_FLASH_BASE=0x08000000
+CONFIG_STM32_RAM_BASE=0x20000000
+
+#
+# Set RAM and FLASH sizes
+#
+CONFIG_STM32_FLASH_LEN=0x80000
+CONFIG_STM32_RAM_LEN=0x10000
+# CONFIG_STM32_SET_OFFSETS is not set
+CONFIG_STM32_PLIBS=y
+# CONFIG_STM32_LIB_SYSTEM is not set
+# CONFIG_STM32_LIB_ADC is not set
+# CONFIG_STM32_LIB_BKP is not set
+# CONFIG_STM32_LIB_CAN is not set
+# CONFIG_STM32_LIB_CEC is not set
+# CONFIG_STM32_LIB_CRC is not set
+# CONFIG_STM32_LIB_DAC is not set
+# CONFIG_STM32_LIB_DBGMCU is not set
+# CONFIG_STM32_LIB_DMA is not set
+# CONFIG_STM32_LIB_EXTI is not set
+# CONFIG_STM32_LIB_FLASH is not set
+# CONFIG_STM32_LIB_FSMC is not set
+CONFIG_STM32_LIB_GPIO=y
+# CONFIG_STM32_LIB_I2C is not set
+# CONFIG_STM32_LIB_IWDG is not set
+# CONFIG_STM32_LIB_PWR is not set
+CONFIG_STM32_LIB_RCC=y
+# CONFIG_STM32_LIB_RTC is not set
+# CONFIG_STM32_LIB_SDIO is not set
+# CONFIG_STM32_LIB_SPI is not set
+# CONFIG_STM32_LIB_TIM is not set
+# CONFIG_STM32_LIB_USART is not set
+# CONFIG_STM32_LIB_WWDG is not set
+# CONFIG_STM32_EXTRA is not set
+# CONFIG_STM32_FULL_ASSERT is not set
+
+#
+# Toolchain settings
+#
+# CONFIG_SHOW_ALL_TOOLCHAINS is not set
+CONFIG_TOOLCHAIN_GCC=y
+CONFIG_TOOLCHAIN_PREFIX="arm-ncrmnt-eabi-"
+CONFIG_CC_OPT0=y
+# CONFIG_CC_OPT1 is not set
+# CONFIG_CC_OPT2 is not set
+# CONFIG_CC_OPT3 is not set
+# CONFIG_CC_OPTSZ is not set
+CONFIG_GCC_NOSTDLIBS=y
+# CONFIG_GCC_LC is not set
+# CONFIG_GCC_LM is not set
+# CONFIG_GCC_STRIP is not set
+# CONFIG_GCC_PARANOID_WRN is not set
+
+#
+# Fine tuning
+#
+CONFIG_CFLAGS=""
+CONFIG_ASFLAGS=""
+CONFIG_LDFLAGS=""
+
+#
+# Libraries and drivers
+#
+# CONFIG_SHOW_BROKEN is not set
+# CONFIG_LIB_NLIBSTUBS is not set
+# CONFIG_LIB_SNPRINTF is not set
+# CONFIG_LIB_NLDUMMY is not set
+# CONFIG_LIB_TMGR is not set
+# CONFIG_LIB_XMODEM is not set
+# CONFIG_LIB_PRINTK is not set
+# CONFIG_LIB_URPC is not set
+# CONFIG_CONTRIB is not set
+
+#
+# Project Settings
+#
+# CONFIG_HELLO_WORLD is not set
+
+#
+# Deployment settings
+#
+# CONFIG_DEPLOY_ROOT is not set
+
+#
+# Pick the deployment methods you need below
+#
+# CONFIG_DEPLOY_DFUUTIL is not set
+# CONFIG_DEPLOY_OPENOCD is not set
+# CONFIG_DEPLOY_STLINK is not set
+CONFIG_DEPLOY_STM32FLASH=y
+# CONFIG_DEPLOY_AS_ROOT is not set
+CONFIG_DEPLOY_STM32FLASH_BIN="stm32flash"
+CONFIG_DEPLOY_STM32FLASH_PORT="/dev/ttyACM0"
+CONFIG_DEPLOY_STM32FLASH_BAUD=57600
+
+#
+# Extended Flash options
+#
+# CONFIG_DEPLOY_STM32FLASH_DFWP is not set
+# CONFIG_DEPLOY_STM32FLASH_VFY is not set
+CONFIG_DEPLOY_STM32FLASH_RETRY_COUNT=10
+# CONFIG_DEPLOY_STM32FLASH_FBP is not set
+CONFIG_DEPLOY_STM32FLASH_EXEC=y
+CONFIG_DEPLOY_STM32FLASH_EXEC_ADDR=0x0
+# CONFIG_DEPLOY_ZMODEM is not set
+
+#
+# Custom deployment methods
+#
+
+#
+# Build System Tweaks
+#
+CONFIG_MAKE_DEFTARGET="deploy"
+CONFIG_DEPLOY_DEFTARGET="stm32flash"
+CONFIG_IMAGE_FILENAME="antares"
+CONFIG_IMAGE_DIR="images"
+CONFIG_NEED_GENERATE=y
+# CONFIG_BUILD_VERBOSE is not set
+
+#
+# Version Information
+#
+
+#
+# +++ For reference only +++
+#
+
+#
+# All values below are to be filled by Make scripts
+#
+
+#
+# Use make set_version to change
+#
+CONFIG_VERSION_MAJOR="0"
+CONFIG_VERSION_MINOR="2-rc1"
+CONFIG_VERSION_CODENAME="Insane Mushroom"
+CONFIG_VERSION_STRING="0.2-rc1, Insane Mushroom"
+CONFIG_VERSION_GIT="dd836f5b1c896048aea09e522595fd4122c147fe"
