@@ -2,10 +2,8 @@
 #include <arch/1890/bdef.h>
 
 .text
-	addu    k0, zero, ra
+	addu    t8, zero, ra
 begin:
-	jal start
-	nop
-        jr  k0
+        jr      t8
         nop
 
